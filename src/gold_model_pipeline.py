@@ -35,6 +35,7 @@ def load_and_prepare_data(filepath):
 def add_features(df):
     df['Previous_Close'] = df['Price'].shift(1)  # Previous day's price
     df['Daily_Return_%'] = df['Price'].pct_change() * 100   # Daily return in percentage
+    
     df['MA_5'] = df['Price'].rolling(window=5).mean()    # 5-day moving average
     df['MA_10'] = df['Price'].rolling(window=10).mean()  # 10-day moving average
     df['MA_30'] = df['Price'].rolling(window=30).mean()  # 30-day moving average
@@ -69,6 +70,7 @@ def train_model(df):
 def evaluate_model(model, X_test, y_test):
     y_pred = model.predict(X_test)    # Predict the target variable using the test set
     mse = mean_squared_error(y_test, y_pred)     # Calculate Mean Squared Error (MSE)
+    
     rmse = np.sqrt(mse)    # Calculate Root Mean Squared Error (RMSE)
     r2 = r2_score(y_test, y_pred)     # Calculate R² score
     
@@ -108,7 +110,7 @@ def plot_results(y_test, y_pred):
     plt.plot(y_pred[:100], label='Predicted', color='blue')
     
     # Title and labels
-    plt.title("Predicted Gold Prices vs Actual Gold Price", fontsize=14, fontweight='bold')
+    plt.title("Predicted Gold Prices vs Actual Gold Price (First 100)", fontsize=14, fontweight='bold')
     plt.xlabel("Index")
     plt.ylabel("Gold Price")
     
