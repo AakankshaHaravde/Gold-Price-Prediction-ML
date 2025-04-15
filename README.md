@@ -5,14 +5,13 @@ A machine learning project that predicts the next-day price of gold based on his
 ---
 
 ## Table of Contents
-- [About the Project](#-about-the-project)
-- [Technologies Used](#-technologies-used)
-- [Features](#-features)
-- [How to Run](#-how-to-run)
-- [Results](#-results)
-- [Author](#-author)
-- [Future Improvements](#-future-improvements)
-
+- [About the Project](#about-the-project)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [How to Run](#how-to-run)
+- [Results](#results)
+- [Author](#author)
+- [Future Improvements](#future-improvements)
 ---
 
 ## About the Project
@@ -51,6 +50,14 @@ This project loads historical gold prices, creates technical indicators like mov
 ![43b1760a-b55f-4e7e-ad88-ceb291677d04](https://github.com/user-attachments/assets/3f1c1027-2f80-4810-a5e1-aed30a2485d4)
 
 ![e8a09bdd-4040-4b74-8b7a-a19f89dd7f26](https://github.com/user-attachments/assets/74d9d440-96c5-4910-a331-6dcf00e91cf3)
+
+## Author
+Aakanksha Haravde
+
+## Future Improvements
+- It can be further improved with models like Random Forest or XGBoost.
+- Experiment with hyperparameter tuning and cross-validation for more robust results.
+- Incorporate real-time data feeds to make live predictions.
 ```bash
 pip install -r requirements.txt  
 
