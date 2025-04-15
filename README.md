@@ -4,7 +4,7 @@ A machine learning project that predicts the next-day price of gold based on his
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 - [About the Project](#-about-the-project)
 - [Technologies Used](#-technologies-used)
 - [Features](#-features)
@@ -15,13 +15,13 @@ A machine learning project that predicts the next-day price of gold based on his
 
 ---
 
-## 📝 About the Project
+## About the Project
 
 This project loads historical gold prices, creates technical indicators like moving averages and returns, then trains a Linear Regression model to predict the gold price for the next day. Evaluation metrics and visualizations help understand model performance.
 
 ---
 
-## 🧰 Technologies Used
+## Technologies Used
 
 - Python 3.x
 - Pandas
@@ -31,17 +31,17 @@ This project loads historical gold prices, creates technical indicators like mov
 
 ---
 
-## 🚀 Features
+## Features
 
-- 📉 Moving Averages: 5, 10, 30 days
-- ⚡ Exponential Moving Averages: 5, 10, 30 days
-- 🔁 Daily Return Percentages
-- ⏪ Previous Day Price
-- ⏩ Next Day Price (target variable)
+- Moving Averages: 5, 10, 30 days
+- Exponential Moving Averages: 5, 10, 30 days
+- Daily Return Percentages
+- Previous Day Price
+- Next Day Price (target variable)
 
 ---
 
-## 🛠️ How to Run
+## How to Run
 
 1. **Clone the repository or download the code**
 
