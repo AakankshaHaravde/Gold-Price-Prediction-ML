@@ -1,6 +1,6 @@
 """
 gold_model_pipeline.py
------------------------
+------------------------
 This script builds a machine learning model to predict next-day gold prices using historical data.
 Includes:
 - Feature engineering (MA, EMA, returns)
